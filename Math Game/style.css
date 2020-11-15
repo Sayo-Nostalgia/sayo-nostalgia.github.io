@@ -1,0 +1,27 @@
+img:hover {
+	filter: brightness(150%);
+}
+
+img {
+	user-select: none;
+}
+
+button {
+	border: 1px solid #2d2c2c;
+	color: white;
+	font-family: Segoe Script Regular
+}
+
+button:disabled {
+	background-color: #3f3f3f;
+}
+
+button:enabled {
+	background-color: #545454;
+}
+
+#menu {
+	position: absolute;
+	bottom: 10px;
+	height: 150px;
+}
