@@ -1,0 +1,16 @@
+#enemy_img {
+	position: absolute;
+	left: 150px;
+}
+
+#hp_b {
+	position: absolute;
+	left: 150px;
+}
+
+button {
+	background-color: #ffffa2;
+	border: 1px solid black;
+	width: 50px;
+	height: 25px;
+}

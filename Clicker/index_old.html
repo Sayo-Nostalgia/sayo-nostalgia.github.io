@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLICKER!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="notification" id="notification" align="right">
+		<p id="text">Новое достижение!</p>
+	</div>
+
+
+	<div class="click_css">
+			<div id="taps" align="center" class="text_taps">0 taps!</div>
+			<img src="sprites/heart.png" onclick="tap()" id="click" class="heart">
+
+	</div>
+	
+	<!--UPGRADES-->
+	<div class="shop">
+		<button onclick="buy_act(), info_atcs()" id="acp" class="upgrade" onmouseover="cas_show()" onmouseout="cas_hide()">Autoclicker: 1tap/s (30taps) quantity: 0x</button><br>
+		<button onclick="buy_sct(), info_atcs()" id="scp" class="upgrade" onmouseover="sas_show()" onmouseout="sas_hide()" style="color: rgba(115, 115, 115, 0.69);">Superclicker: 5tap/s (100taps) quantity: 0x</button><br>
+		<button onclick="buy_lt(), info_atcs()" id="lcp" class="upgrade" onmouseover="las_show()" onmouseout="las_hide()" style="color: rgba(115, 115, 115, 0.69);">Love: 10tap/s (200taps) quantity: 0x</button><br>
+		<button onclick="buy_ht(), info_atcs()" id="hcp" class="upgrade" onmouseover="has_show()" onmouseout="has_hide()" style="color: rgba(115, 115, 115, 0.69);">Heart: 20tap/s (400taps) quantity: 0x</button><br>
+		<button onclick="buy_soul_t(), info_atcs()" id="soul_cp" class="upgrade" onmouseover="soul_as_show()" onmouseout="soul_as_hide()" style="color: rgba(115, 115, 115, 0.69);">Soul: 100tap/s (1000taps) quantity: 0x</button><br>
+	</div>
+		
+	<!--UPGRADES-->
+
+	<!-- SHOP -->
+
+	<div id="shop_h" class="menu">
+		
+		<div id="head_s" class="menu_h" align="right">
+			<span style="color: white">SHOP</span>
+			<button onclick="close_shop()" class="mb" id='close'>X</button>
+		</div>
+		<div id="shop_h_h">
+			<div id="page1">
+			<div class="hrt_border">
+				<img src="sprites/heart.png" height="100px">
+				<span class="n_h_s">DEFAULT HEART</span>
+				<span><button onclick="set_r_h()">SET</button></span>
+			</div>
+			
+			<div class="hrt_border">
+				<img src="sprites/blue_heart.png" height="100px">
+				<span class="n_h_s">BLUE HEART</span>
+				<span><button onclick="set_b_h()">SET</button></span>
+			</div>
+			</div>
+
+			<div id="page2">
+			<div class="hrt_border">
+				<img src="sprites/green_heart.png" height="100px">
+				<span class="n_h_s">GREEN HEART</span>
+				<span><button onclick="set_g_h()">SET</button></span>
+			</div>
+
+			<div class="hrt_border">
+				<img src="sprites/yellow_heart.png" height="100px">
+				<span class="n_h_s">YELLOW HEART</span>
+				<span><button onclick="buy_y_h()" id="buy_yh_b">BUY(100taps)</button></span>
+			</div>
+			</div>
+
+
+		</div>
+
+		<div id="page_b" align="right">
+			<button class='mb' onclick="prev_p()"><</button>
+			<button class='mb' id='next_p' onclick="next_p()">></button>
+		</div>
+
+	</div>
+
+	<!-- SHOP -->
+
+
+	<!-- ACHIEVEMENTS -->
+
+	<div id="ach_h" class="menu">
+		<div id="head_ach" class="menu_h" align="right">
+			<span style="color: white">ACHIEVEMENTS</span>
+			<button onclick="close_ach()" class="mb" id='close_ach'>X</button>
+		</div>
+
+		<div class="dg_ach" id="ach_1tap">
+			<img src="sprites/ach_1tap.png" align="center">
+			<span class="ach_name">Удар в сердце</span>
+			<p class="ach_htg">Впервые кликнуть по сердцу</p>
+		</div>
+
+		<div class="dg_ach" id="ach_1lvl">
+			<img src="sprites/ach_1lvl.png" align="center">
+			<span class="ach_name">Первые шаги</span>
+			<p class="ach_htg">Получить 1 уровень</p>
+		</div>
+	</div>
+
+	<!-- ACHIEVEMENTS -->
+
+
+	<!--DOWN-->
+	<div class="down">
+	<!--FOOTER-->
+	<p id="autoclick_info" align="right" class="taps_s">Autoclickers: <br> 0taps/s</p>
+	<p id="click_sec_info" align="right" class="taps_s">You: <br> 0taps/s</p>
+
+		<img src="sprites/lvl_up.png" onmouseover="lvl_t_show()" onmouseout="lvl_t_hide()" onclick="lvl_up()" id="lvl">
+		<img src="sprites/shop.png" onmouseover="info_s_show()" onmouseout="info_s_hide()" onclick="shop()" id="shop_b">
+		<img src="sprites/achievements.png" onmouseover="info_ach_show()" onmouseout="info_ach_hide()" onclick="achievements()" id="ach_b">
+		<span id="ach_s" class="info">Achievements</span>
+		<span id="shop_s" class="info">Shop</span>
+		<span id="lvl_t" class="info">YOUR LVL: 0 <br> lvl:up = 15 <br> 1tap = 1tap</span>
+	</div>
+	<!--FOOTER-->
+
+
+	<!--ITEMS-->
+		<img src="sprites/ring_of_damage.png" onclick="buy_ringofdamage()" class="items" id="rod" onmouseover="rod_show()" onmouseout="rod_hide()"></img>	
+			<span id="charact_rod" class="info">Your damage = x2. Need 1000 taps.</span>
+	<!--ITEMS-->
+
+
+	<script src="JS/script.js"></script>
+	<script src="JS/autoclick.js"></script>
+	<script src="JS/lvl_up.js"></script>
+	<script src="JS/shop.js"></script>
+	<script src="JS/characteristic.js"></script>
+	<script src="JS/achievements.js"></script>
+</body>
+</html>

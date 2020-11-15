@@ -1,0 +1,35 @@
+#game {
+	display: none
+}
+
+#d2 {
+	display: none
+}
+
+#dialog {
+	background-color: #ffff73;
+	border: 1px solid black;
+	width: auto
+}
+
+#enemy_img {
+	position: absolute;
+	left: 150px;
+}
+
+#hp_b {
+	position: absolute;
+	left: 150px;
+}
+
+button {
+	background-color: #ffffa2;
+	border: 1px solid black;
+	width: 50px;
+	height: 25px;
+}
+
+#button_next {
+	display: none;
+	width: auto;
+}

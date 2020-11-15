@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SurvivalGame</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+			<details id="invertory">
+		<summary>INVERTORY</summary>
+			</details>
+
+			<details id="craft">
+		<summary>CRAFT</summary>
+
+			<button onclick="craft_plank()">Plank 8x (1x Tree)</button>
+			<button onclick="craft_woodenwall()">Wooden Wall (10x Planks)</button>
+			</details>
+
+
+	<canvas id="player" width="20" height="20" style="border: 1px solid black;" onkeydown="run()" onclick="alert(this.id)">
+	</canvas>
+
+
+
+	<script src="script/script.js"></script>
+	<script src="script/destroy.js"></script>
+	<script src="script/generate.js"></script>
+	<script src="script/title.js"></script>
+	<script src="script/craft.js"></script>
+	<script src="script/build.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Обучение | Way to the hero</title>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="bot.js"></script>
+	<script type="text/javascript" src="quest.js"></script>
+	<script type="text/javascript" src="../../script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="dialog">
+	<div id="d1">
+		<p><b>Незнакомец: </b>Здраствуй, воин. Не хочешь ли ты пройти обучение?</p>
+		<button onclick="start_tutorial()">Хочу</button>
+	</div>
+
+	<div id="d2">
+		<p id="d2p"><b>Незнакомец: </b>Отлично. У тебя есть 3 атаки. Каждая атака наносит определённый урон. Попробуй нажать на кнопку "2".</p>
+		<button id="button_next"></button>
+	</div>
+</div>
+
+
+
+<div id="game">
+	<p id="hp_p">Player: 15HP</p>
+	<img src="../../sprites/player.png" id="player_img">
+	<img src="../../sprites/enemy.png" id="enemy_img">
+	<p id="hp_b">Bot: 20HP</p><br><br><br><br><br><br>
+	<button id="button_1" onclick="attack_1()">1</button>
+	<button id="button_2" onclick="attack_2()">2</button>
+	<button id="button_3" onclick="attack_3()">3</button>
+
+
+	<div>
+		<p id="history">История боя:</p>
+	</div>
+</div>
+</body>
+</html>

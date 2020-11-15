@@ -1,0 +1,45 @@
+#game {
+	display: none
+}
+
+#d2 {
+	display: none
+}
+
+#dialog {
+	background-color: #ffff73;
+	border: 1px solid black;
+	width: auto
+}
+
+#enemy_img {
+	position: releative;
+	left: 210px;
+}
+
+#hp_b {
+	position: absolute;
+	left: 150px;
+}
+
+button {
+	background-color: #ffffa2;
+	border: 1px solid black;
+	height: 25px;
+	width: auto;
+}
+
+.act {
+	width: 50px;
+}
+
+#players {
+	background-image: url(../../../bg/forest.png);
+	width: 343px;
+    height: 220px;
+}
+
+.fighters {
+	position: relative;
+	top: 125px;
+}

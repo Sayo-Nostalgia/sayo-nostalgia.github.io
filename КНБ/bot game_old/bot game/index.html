@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RSP OLD</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="info">
+		<p>Статистика:</p>
+		<div class="info">
+		<p>Победы:</p>
+			<p id="b1_wins">Бот 1: </p>
+			<p id="b2_wins">Бот 2: </p>
+		</div>
+		<p id="stndof">Ничья: </p>
+		<p id="rounds">Всего раундов: </p>
+	</div>
+
+	<div class="info">
+		<p>Выбор:</p>
+		<p id="b1_choice">Бот 1: </p>
+		<p id="b2_choice">Бот 2: </p>
+	</div>
+
+	<div class="info">
+		<p>Использовано:</p>
+		<p id="used_r">Камень: </p>
+		<p id="used_s">Ножницы: </p>
+		<p id="used_p">Бумага: </p>
+	</div>	
+
+
+
+<!-- OPTIONS -->
+
+	<div class="info">
+		<p>Настройки:</p>
+
+		<!-- SPEED -->
+			<div class="info">
+				<p>Скорость:</p>
+				<button onclick="speed_plus()">+</button>
+				<span id="speed">100</span>
+				<button id="speed_minus" onclick="speed_minus()">-</button>
+			</div>
+		<!-- MAX ROUNDS -->
+			<div class="info">
+				<p>Максимальное кол-во раундов:</p>
+				<input type="radio" id="on_max_rounds" onclick="max_rounds_on()"><span>Вкл.</span>
+				<input type="radio" id="off_max_rounds" onclick="max_rounds_off()" checked="true"><span>Выкл.</span>
+				<input type="text" id="rounds_x" disabled="true">
+				<button onclick="set_max_rounds_x()" id='apply_max_rounds' disabled="true">Применить</button>
+			</div>
+		<!-- PARSE INT % -->
+			<div class="info">
+				<p>Сокращать проценты:</p>
+				<input type="radio" id="parseint_p_on" onclick="parseint_p_on()"><span>Вкл.</span>
+				<input type="radio" id="parseint_p_off" onclick="parseint_p_off()" checked="true"><span>Выкл.</span>
+			</div>
+	</div>	
+
+	<script src="script.js"></script>
+	<script src="max_rounds.js"></script>
+	<script src="parseint_p.js"></script>
+</body>
+</html>

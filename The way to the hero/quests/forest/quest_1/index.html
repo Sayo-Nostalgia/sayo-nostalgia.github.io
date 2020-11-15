@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Волки | Mobitva clon</title>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="bot.js"></script>
+	<script type="text/javascript" src="quest.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="dialog">
+	<div id="d1">
+		<p>*Кто-то стучит в дверь</p>
+		<button onclick="start_quest1()">Хорошо</button>
+	</div>
+
+	<div id="d2">
+		<p id="d2p"><b>Незнакомец 2: </b>Здраствуй, воин. Из-за волков в лесу, я не могу попасть в свой дом! Прошу, одолей этих волков...</p>
+		<button id="button_next"></button>
+	</div>
+</div>
+
+
+
+<div id="game">
+	<p id="hp_p">Player: 15HP</p>
+	<div id="players">
+		<img src="../../../sprites/player.png" id="player_img" class="fighters">
+		<img src="../../../sprites/enemy.png" id="enemy_img" class="fighters">
+	</div>
+	<p id="hp_b">Волк: 5HP</p><br><br><br><br><br><br>
+	<button id="button_1" class="act" onclick="attack_1()">1</button>
+	<button id="button_2" class="act" onclick="attack_2()">2</button>
+	<button id="button_3" class="act" onclick="attack_3()">3</button>
+
+
+	<div>
+		<p id="history">История боя:</p>
+	</div>
+</div>
+</body>
+</html>

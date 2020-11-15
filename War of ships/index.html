@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>War of ships</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<p>Player 1</p>
+<p id="hp1">HP:</p>
+<div id="p1">
+<p id="balance1">BALANCE: </p>
+
+	<pre>
+
+          |\___..--"/
+   __..--``        /
+  \_______________/ 
+	</pre>
+
+<button onclick="remont1()" id="rem_b1">Ремонт корабля (+100HP)<br> Стоимость: 250</button><br>
+<button onclick="attack1()" id="dmg_b1">Атака (dmg: 100)</button><br>
+<button onclick="upg_dmg1()" id="upg_dmg1">Улучшение урона (+100)<br> Стоимость: 150</button><br>
+<button onclick="upg_rem1()" id="upg_rem1">Улучшение ремонта корабля (+100)<br> Стоимость: 150</button><br>
+</div>
+
+<div id="status2">
+<p>Player 2</p>
+<p id="hp2">HP:</p>
+</div>
+<div id="p2">
+<p id="balance2">BALANCE: </p>
+	<pre>
+
+	\"--..___/|
+	 \        ``--..__
+ 	  \_______________/
+	</pre>
+
+<button onclick="remont2()" id="rem_b2">Ремонт корабля (+100HP)<br> Стоимость: 250</button><br>
+<button onclick="attack2()" id="dmg_b2">Атака (dmg: 100)</button><br>
+<button onclick="upg_dmg2()" id="upg_dmg2">Улучшение урона (+100)<br> Стоимость: 150</button><br>
+<button onclick="upg_rem2()" id="upg_rem2">Улучшение ремонта корабля (+100)<br> Стоимость: 150</button><br>
+</div>
+
+<script src="JS/script.js"></script>
+<script src="JS/upgrades.js"></script>
+<script src="JS/remont.js"></script>
+<script src="JS/attack.js"></script>
+</body>
+</html>
