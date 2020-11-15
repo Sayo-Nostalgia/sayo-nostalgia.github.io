@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convertator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<details>
+		<summary>Время</summary>
+		<input type="text" id="msec" placeholder="Миллисекунда" title="Миллисекунда">
+		<button onclick="c_ms()">Конвертировать</button><br>
+		
+		<input type="text" id="sec" placeholder="Секунда" title="Секунда">
+		<button onclick="c_s()">Конвертировать</button><br>
+		
+		<input type="text" id="min" placeholder="Минута" title="Минута">
+		<button onclick="c_m()">Конвертировать</button><br>
+		
+		<input type="text" id="hour" placeholder="Час" title="Час">
+		<button onclick="c_h()">Конвертировать</button><br>
+	</details>
+
+	<details>
+		<summary>Скорость</summary>
+		
+		<input type="text" id="km_h" placeholder="км/час" title="км/час">
+		<button onclick="km_h()">Конвертировать</button><br>
+
+		<input type="text" id="m_min" placeholder="м/мин" title="м/мин">
+		<button onclick="m_m()">Конвертировать</button><br>
+
+		<input type="text" id="m_sec" placeholder="м/сек" title="м/сек">
+		<button onclick="m_s()">Конвертировать</button><br>
+	</details>
+
+	<script src="JS/time.js"></script>
+	<script src="JS/speed.js"></script>
+</body>
+</html>
