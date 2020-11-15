@@ -1,0 +1,37 @@
+.headmenu {
+	background-color: #f7f7bd;
+	border: 2px solid black;
+	margin: -0.6%;
+}
+
+.randomb {
+	border: 1px solid black;
+	background-color: #f7f7bd;
+	outline: none;
+}
+
+.randomb:active {
+	background-color: rgba(193, 247, 189, 1);
+}
+
+.num {
+	border: 1px solid black;
+	width: 18%;
+	height: 40px;
+	margin: 0px;
+	background-color: #f7f7bd;
+}
+
+summary {
+	border: 1px solid black;
+	background-color: #f7f7bd;
+	width: 18%;
+}
+
+.random_word {
+	margin: 10px;
+}
+
+#word {
+
+}
